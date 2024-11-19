@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+/*đồng hồ*/
+#clock {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+/*tìm kiếm,nút sắp xếp*/
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#search-query {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/*nút tìm trọ*/
+.blink-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  animation: blink 1s infinite;
+  cursor: pointer;
+}
+@keyframes blink {
+  50% {
+      opacity: 0.5;
+  }
+}
+.blink-button:hover {
+  background-color: darkred;
+}
+
+/*bố cụccác nút sắp xếp*/
+.sort-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/*danh sách các quốc gia*/
+#country-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+/*thẻ quốc gia*/
+.country-card {
+  width: 220px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.country-card img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  text-align: center;
+  color: #444;
+}
+
+#weather-box {
+  background: linear-gradient(135deg, #6fb1fc, #4364f7);
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#weather-content img {
+  width: 80px;
+  height: 80px;
+}
+
+#weather-content h4 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+#weather-content p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/*thông tin thời tiết*/
+#weather-content {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*màu động theo từng phần*/
+#weather-content p:nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffe66d;
+}
+
+#weather-content p:nth-child(3) {
+  color: #a8f7d1;
+}
+
+#weather-content p:nth-child(4) {
+  color: #ffd3d3;
+}
+
+#weather-content p:nth-child(5) {
+  color: #d3d3ff;
+}
